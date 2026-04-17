@@ -1,0 +1,24 @@
+{
+  "id": "pdf-sign",
+  "name": "pdf-sign",
+  "displayName": "PDF Sign",
+  "description": "Sign PDFs with signature images or typed text. Add watermarks, check PDF metadata. Supports position presets, exact coordinates, all-pages stamping, date stamps, and opacity control. Powered by PDFAPIHub.",
+  "version": "1.0.0",
+  "author": "PdfApiHub",
+  "homepage": "https://pdfapihub.com",
+  "extensions": ["./index.ts"],
+  "skills": ["./skills"],
+  "compat": {
+    "pluginApi": ">=2026.3.24-beta.2",
+    "minGatewayVersion": "2026.3.24-beta.2"
+  },
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "apiKey": {
+        "type": "string",
+        "description": "PDFAPIHub API key. Get a free key at https://pdfapihub.com"
+      }
+    }
+  }
+}

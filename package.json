@@ -1,0 +1,38 @@
+{
+  "name": "pdf-sign",
+  "version": "1.0.0",
+  "description": "Sign PDFs with signature images or typed text. Supports position presets, exact coordinates, all-pages stamping, date stamps, opacity control, and watermarking. Powered by PDFAPIHub.",
+  "type": "module",
+  "main": "index.ts",
+  "keywords": [
+    "openclaw",
+    "pdf-sign",
+    "e-signature",
+    "digital-signature",
+    "pdf-watermark",
+    "pdf-stamp",
+    "document-signing",
+    "pdfapihub",
+    "clawhub",
+    "ai-agent"
+  ],
+  "author": "PDFAPIHub <hello@pdfapihub.com>",
+  "license": "MIT",
+  "homepage": "https://pdfapihub.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PdfApiHub/openclaw-pdf-sign"
+  },
+  "openclaw": {
+    "extensions": ["./index.ts"],
+    "skills": ["./skills"],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2",
+      "minGatewayVersion": "2026.3.24-beta.2"
+    },
+    "build": {
+      "openclawVersion": "2026.3.24-beta.2",
+      "pluginSdkVersion": "2026.3.24-beta.2"
+    }
+  }
+}
